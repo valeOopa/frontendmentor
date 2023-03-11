@@ -1,0 +1,159 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat';
+	
+}
+.mar{
+	margin: 20px 0;
+}
+body{
+	height: 100vh;
+}
+
+.background{
+	background: hsl(30, 38%, 92%);
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.container{
+	display: flex;
+	width: 600px;
+	height: 450px;
+}
+.img-container{
+	width: 50%;
+}
+.img-container .img{
+	height: 100%;
+	border-bottom-left-radius: 10px;
+	border-top-left-radius: 10px;
+}
+.img-mobile{
+	display: none;
+}
+
+.text-container{
+	width: 50%;
+	background: #fff;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	padding: 30px 30px 25px 30px;
+}
+
+.text-container__section{
+	letter-spacing: 5px;
+	font-size: 12px;
+	color: hsl(228, 12%, 48%);
+	margin: 0 0 15px 0;
+}
+.text-container__title{
+	font-family: 'Fraunces';
+	color: hsl(212, 21%, 14%);
+	font-size: 2.1em;
+	line-height: 1;
+}
+.text-container__paragraph{
+	color: hsl(228, 12%, 48%);
+	font-size: 14px;
+	line-height: 1.5;
+}
+.price-container{
+	display: flex;
+	align-items: center;
+	width: 100%;
+}
+
+.price-offer{
+	color: hsl(158, 36%, 37%);
+	display: inline-block;
+	font-family: 'Fraunces';
+	font-size: 2.1em;
+}
+.price-original{
+	color: hsl(228, 12%, 48%);
+	text-decoration: line-through;
+	font-size: 14px;
+	margin-left: 20px;
+}
+.cart-button{
+	display: flex;
+	justify-content: center;
+	border: none;
+	background: hsl(158, 36%, 37%);
+	margin: 35px 0 0 0;
+	padding: 15px 0;
+	color: #fff;
+	font-size: 14px;
+	border-radius: 15px;
+	width: 100%;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	font-weight: 700;
+}
+.cart-button img{
+	margin-right: 10px;
+}
+.cart-button:hover{
+	background: rgb(30, 64, 51.5);
+	cursor: pointer;
+}
+
+@media screen and (max-width:565px){
+	.background{
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+	}
+	.container{
+		position: relative;
+		top: -14%;
+		flex-direction: column;
+		align-items: center;
+		width: 1200px;
+	}
+	.img-container{
+		height: max-content;
+		margin-top: 0;
+		min-width: 340px;
+		width: 50%;
+	}
+	.img{
+		display: none;
+	}
+	.img-container .img-mobile{
+		display:block;
+		width: 100%;
+		border-top-right-radius: 10px;
+		border-top-left-radius: 10px;
+		border-bottom-left-radius: 0px;
+	}
+	.text-container{
+		min-width: 340px;
+	}
+	.text-container__section{
+		font-size: 12px;
+	}
+	.text-container__title{
+		font-size: 2.1em;
+	}
+	.text-container__paragraph{
+		font-size: 14px;
+	}
+	.price-offer{
+		font-size: 2.1em;
+	}
+	.price-original{
+		font-size: 14px;
+	}
+	.cart-button{
+		margin: 10px 0 0 0;
+		font-size: 14px;
+	}
+}
